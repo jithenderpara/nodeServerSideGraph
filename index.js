@@ -244,7 +244,7 @@ app.get('/img', async (req, res) => {
 
 		// Add the Y Axis
 		svg.append('g').call(d3.axisRight(y));
-		
+
 /////////D3 Vertical Lengend ///////////////////////////
 		// // Add one dot in the legend for each name.
 		// svg
@@ -358,7 +358,7 @@ app.get('/img', async (req, res) => {
             .attr("y", 10)
         //.attr("dy", ".35em")
         .text(function (d, i) {
-            return d
+            return capitalize(d)
         })
             .attr("class", "textselected")
             .style("text-anchor", "start")
